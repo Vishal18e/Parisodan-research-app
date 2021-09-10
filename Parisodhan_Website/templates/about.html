@@ -1,0 +1,100 @@
+{% extends "base.html" %}            
+{% block content %}            
+    <!-- Page Header Start -->
+    <div class="page-header" style = "background-color: #030f27;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 style="color: #fdbe33;">About</h2>
+                </div>
+                <div class="col-12">
+                    <a href="{{url_for('index')}}">Home</a>
+                    <a href="#">About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 col-md-6">
+                    <div class="section-header text-left">
+                        <h2>Our fascinating story</h2>
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            We, the students of EEE department of IITG were given a chance to work on a project as part of 
+                            course project by Dr. Gaurav Trivedi which helped us 
+                            learn many things like front end, back end and ML deployment.
+                        </p>
+                        <h3>Timeline</h3>
+                        The entire duration of the project required 5 weeks of strenuous work.
+                        <ol>
+                            <li>The first two weeks comprised of learning of front end, back end development, 
+                                and ML training by the respective members.
+                            </li>
+                            <li>The third and fourth weeks were used to create the modules separately by the respective members.
+                            </li>
+                            <li>
+                                The fifth week was used to integrate all the modules into a single package.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" style="background-color: burlywood">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 col-md-6">
+                    <div class="section-header text-left">
+                        <p   style="color: #030f27;">Welcome to PARISODHAN</p>
+                        <h3  style="color: wheat;" >It is every Researcher's Ornament</h3>
+                    </div>
+                    <div class="about-text">
+                        <p style="color: black;">
+                            We tried to create a tool that is essential for many researchers and accelerate research.
+                            The research papers and documents are very long so finding something important becomes extremely difficult. So, we tried to automate that using deep learning.
+                            Our model can search the answers for your question in long text and papers within a short time.
+                            It doesn’t give the direct words in the text. The language model we used is powerful to understand the text, capture multiple sentences and it is highly parallelizable and computes efficiently. 
+                            We are using an excellent transformer model in deep learning which avoids recursion by processing sentences as a whole using attention mechanisms and positional embeddings. So, given a paragraph and question our model can produce the best possible answer compared to humans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" style="background-color: #030f27">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 col-md-6">
+                    <div class="section-header text-left">
+                        <p   style="color: #030f27;">Welcome to PARISODHAN</p>
+                        <h3  style="color: wheat;" >Services provided</h3>
+                    </div>
+                    <div class="about-text">
+                        <p style="color: whitesmoke">
+
+                            The first one requires user to input paragraphs and ask questions.
+                        </p>
+                        <p style="color: whitesmoke">
+                            The second one requires user to upload a book or a pdf, apply OCR (optical character recognition) and extract the text. These will be long texts, so we divide them into pages and create a map of words and pages. So given a question we search only those pages which have relevant words and not the entire pdf. We also remove punctuations and extra spaces.
+                        </p>
+                        <p style="color: whitesmoke">
+                            The third one requires user to give the question and we automatically surf Wikipedia to find the best possible answer. We use web scrapping to get the relevant wiki pages and use that text to find the answer with maximum score and return it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+{% endblock content %}

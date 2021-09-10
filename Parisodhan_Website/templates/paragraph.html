@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<div class = "divbackground container">
+  <br>
+  <h3 style = "color: #FBD603; text-align: center;">It is time to test Paragraph Search!!!</h3>
+  <br>
+  <form role="form" method='POST' action='#'>
+    <div class="form-group">
+      <label for="paragraph">Enter a Paragraph</label>
+      <textarea name="paragraph" class="form-control" id="url-box" style = "min-height: 100px;" placeholder="Enter a paragraph" autofocus required>
+        {% if result %}
+                  {{ result[2] }}
+              {% endif %}
+      </textarea>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="question">Ask a Question</label>
+      <input type="text" name="question" class="form-control" id="url-box" placeholder="Enter a question" autofocus required>
+    </div>
+    <button type="submit" class="button button1">Predict</button>
+    <a class="button button1" href="{{url_for('paragraph')}}">Reset</a>
+  </form>
+
+  <br>
+
+  <div class="row" style = "background-color: white; justify-content: center;">
+      <div>
+        {% if result %}
+        <h4 style = "color: #FBD603; text-align: center;" >Question = {{ result[0] }}</h4>
+        <h4 style = "color: #FBD603; text-align: center;" >Answer= {{ result[1] }}</h4>
+        {% endif %}
+      </div>
+  </div>
+
+</div>             
+{% endblock content %}
