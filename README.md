@@ -7,3 +7,6 @@ The first one requires user to input paragraphs and ask questions.
 The second one requires user to upload a book or a pdf, apply OCR (optical character recognition) and extract the text. These will be long texts, so we divide them into pages and create a map of words and pages. So given a question we search only those pages which have relevant words and not the entire pdf. We also remove punctuations and extra spaces.
 
 The third one requires user to give the question and we automatically surf Wikipedia to find the best possible answer. We use web scrapping to get the relevant wiki pages and use that text to find the answer with maximum score and return it.
+
+## Live at
+https://parishodan.herokuapp.com/
